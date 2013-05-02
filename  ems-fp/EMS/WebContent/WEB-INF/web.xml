@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+ <session-config>
+   <session-timeout>10</session-timeout>
+ </session-config>
+  <servlet>
+    <servlet-name>LoginController</servlet-name>
+    <servlet-class>com.webapporg.controller.LoginController</servlet-class>
+  </servlet>
+  <servlet>
+     <servlet-name>Reg</servlet-name>
+    <servlet-class>com.webapporg.controller.RegistrationController</servlet-class>
+  </servlet>
+  <servlet>
+     <servlet-name>Settings</servlet-name>
+    <servlet-class>com.webapporg.controller.SettingsController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Enquiry</servlet-name>
+    <servlet-class>com.webapporg.controller.EnquiryController</servlet-class>
+  </servlet>
+
+
+
+  <servlet-mapping>
+    <servlet-name>LoginController</servlet-name>
+    <url-pattern>/Login.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Reg</servlet-name>
+    <url-pattern>/Register.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Settings</servlet-name>
+    <url-pattern>/Settings.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Enquiry</servlet-name>
+    <url-pattern>/Enquiry.do</url-pattern>
+  </servlet-mapping>
+
+ 
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
